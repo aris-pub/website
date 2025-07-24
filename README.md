@@ -49,8 +49,11 @@ src/
 ## Features
 
 - ✅ Responsive design with dark mode support
+- ✅ Mobile-optimized navigation with hamburger menu
+- ✅ Custom logo system with Georgia serif typography
 - ✅ Blog with Markdown support
 - ✅ Netlify CMS integration
-- ✅ SEO optimized
+- ✅ SEO optimized with structured data
 - ✅ Performance optimized
 - ✅ Accessible design
+- ✅ Academic-focused design for Preview Press and RSM Studio
