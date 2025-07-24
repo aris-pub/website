@@ -398,9 +398,28 @@ main {
     border-color: #FF6B6B;
 }
 
-/* Hero Studio button blue hover */
+/* Hero buttons with outlined treatment */
+.hero-cta .btn-primary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid #FF6B6B;
+}
+
+.hero-cta .btn-primary:hover {
+    background: #FF6B6B;
+    color: #ffffff;
+    border-color: #FF6B6B;
+}
+
+.hero-cta .btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid #4A90E2;
+}
+
 .hero-cta .btn-secondary:hover {
     background: #4A90E2;
+    color: #ffffff;
     border-color: #4A90E2;
 }
 
