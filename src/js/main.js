@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuToggle.addEventListener('click', function() {
             mobileMenuToggle.classList.toggle('active');
             mobileNav.classList.toggle('active');
+            document.body.classList.toggle('mobile-menu-open');
         });
 
         // Close mobile menu when clicking on links
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 mobileMenuToggle.classList.remove('active');
                 mobileNav.classList.remove('active');
+                document.body.classList.remove('mobile-menu-open');
             });
         });
 
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!mobileMenuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
                 mobileMenuToggle.classList.remove('active');
                 mobileNav.classList.remove('active');
+                document.body.classList.remove('mobile-menu-open');
             }
         });
     }
@@ -84,51 +87,59 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Dark mode functionality
     const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const sunIcon = darkModeToggle.querySelector('.sun-icon');
-    const moonIcon = darkModeToggle.querySelector('.moon-icon');
+    const mobileDarkModeToggle = document.getElementById('mobile-dark-mode-toggle');
+    
+    // Get icons from both toggles
+    const desktopSunIcon = darkModeToggle.querySelector('.sun-icon');
+    const desktopMoonIcon = darkModeToggle.querySelector('.moon-icon');
+    const mobileSunIcon = mobileDarkModeToggle.querySelector('.sun-icon');
+    const mobileMoonIcon = mobileDarkModeToggle.querySelector('.moon-icon');
     
     // Check for saved theme preference or default to 'light'
     const currentTheme = localStorage.getItem('theme') || 
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     
+    // Function to update all icons
+    function updateIcons(theme) {
+        if (theme === 'dark') {
+            desktopSunIcon.style.display = 'none';
+            desktopMoonIcon.style.display = 'block';
+            mobileSunIcon.style.display = 'none';
+            mobileMoonIcon.style.display = 'block';
+        } else {
+            desktopSunIcon.style.display = 'block';
+            desktopMoonIcon.style.display = 'none';
+            mobileSunIcon.style.display = 'block';
+            mobileMoonIcon.style.display = 'none';
+        }
+    }
+    
     // Apply theme on page load
     if (currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
-        sunIcon.style.display = 'none';
-        moonIcon.style.display = 'block';
+        updateIcons('dark');
     }
     
-    // Toggle dark mode
-    darkModeToggle.addEventListener('click', function() {
+    // Function to toggle theme
+    function toggleTheme() {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        
-        // Toggle icons
-        if (newTheme === 'dark') {
-            sunIcon.style.display = 'none';
-            moonIcon.style.display = 'block';
-        } else {
-            sunIcon.style.display = 'block';
-            moonIcon.style.display = 'none';
-        }
-    });
+        updateIcons(newTheme);
+    }
+    
+    // Add event listeners to both toggles
+    darkModeToggle.addEventListener('click', toggleTheme);
+    mobileDarkModeToggle.addEventListener('click', toggleTheme);
     
     // Listen for system preference changes
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
         if (!localStorage.getItem('theme')) {
             const newTheme = e.matches ? 'dark' : 'light';
             document.documentElement.setAttribute('data-theme', newTheme);
-            
-            if (newTheme === 'dark') {
-                sunIcon.style.display = 'none';
-                moonIcon.style.display = 'block';
-            } else {
-                sunIcon.style.display = 'block';
-                moonIcon.style.display = 'none';
-            }
+            updateIcons(newTheme);
         }
     });
 });

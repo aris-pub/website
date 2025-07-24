@@ -70,8 +70,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(250, 250, 248, 0.92);
-    backdrop-filter: blur(12px);
+    background: var(--bg-primary);
     z-index: 1000;
     border-bottom: 1px solid var(--border-light);
 }
@@ -124,13 +123,15 @@ nav.desktop-nav {
     flex-direction: column;
     background: var(--bg-card);
     border-top: 1px solid var(--border-light);
-    padding: var(--space-sm);
+    border-bottom: 1px solid var(--border-light);
+    padding: 0;
     gap: 0;
     width: 100%;
+    margin-bottom: var(--space-sm);
 }
 
 .mobile-nav a {
-    padding: var(--space-sm) 0;
+    padding: var(--space-sm) var(--space-sm);
     text-decoration: none;
     color: var(--text-secondary);
     font-size: 1rem;
@@ -147,9 +148,42 @@ nav.desktop-nav {
     color: var(--accent);
 }
 
+/* Mobile controls container */
+.mobile-controls {
+    display: none;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+/* Mobile dark mode toggle */
+.mobile-dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.mobile-dark-mode-toggle:hover {
+    background: var(--bg-subtle);
+}
+
+.mobile-dark-mode-toggle svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
 /* Mobile menu toggle button */
 .mobile-menu-toggle {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -171,7 +205,7 @@ nav.desktop-nav {
 }
 
 .mobile-menu-toggle.active .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: translateY(6px) rotate(45deg);
 }
 
 .mobile-menu-toggle.active .hamburger-line:nth-child(2) {
@@ -179,7 +213,7 @@ nav.desktop-nav {
 }
 
 .mobile-menu-toggle.active .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 nav.desktop-nav a {
@@ -345,6 +379,9 @@ main {
     gap: var(--space-lg);
     margin-top: var(--space-lg);
     padding: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-card {
@@ -357,6 +394,8 @@ main {
     min-height: 500px;
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .product-card:hover {
@@ -966,14 +1005,28 @@ footer {
         display: none !important;
     }
 
-    /* Show mobile menu toggle */
-    .mobile-menu-toggle {
+    /* Show mobile controls */
+    .mobile-controls {
         display: flex !important;
     }
 
     /* Mobile nav when active */
     .mobile-nav.active {
         display: flex;
+    }
+
+    /* Darken all content when mobile menu is open */
+    body.mobile-menu-open::after {
+        content: '';
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 500;
+        transition: opacity 0.15s ease;
+        pointer-events: none;
     }
 
     /* Reset main padding to normal header height */
@@ -1300,7 +1353,7 @@ footer {
     }
 }
 
-/* Dark Mode Toggle */
+/* Dark Mode Toggle - Desktop Only */
 .dark-mode-toggle {
     position: fixed;
     bottom: calc(var(--space-md) + 60px);
@@ -1318,6 +1371,13 @@ footer {
     justify-content: center;
     transition: all 0.3s ease;
     border: 1px solid var(--border-light);
+}
+
+/* Hide desktop dark mode toggle on mobile */
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        display: none;
+    }
 }
 
 .dark-mode-toggle:hover {
