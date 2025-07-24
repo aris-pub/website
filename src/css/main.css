@@ -14,8 +14,8 @@
     --bg-card: #ffffff;     /* Pure white for cards */
     --bg-subtle: #f5f5f2;   /* Slightly darker off-white */
     --border-light: #e8e8e4;
-    --accent: #4A90E2;
-    --accent-dark: #0055cc;
+    --accent: #AD71F2;
+    --accent-dark: #8B4DBF;
     
     /* Typography - More differentiated */
     --font-serif: 'Georgia', 'Garamond', 'Times New Roman', serif;
@@ -102,8 +102,13 @@ header {
     gap: 10px;
 }
 
+.logo-svg {
+    height: 40px;
+    width: auto;
+}
+
 .logo-dot {
-    color: var(--accent);
+    color: #AD71F2;
     font-size: 0.5em;
     vertical-align: middle;
 }
@@ -312,9 +317,10 @@ main {
 
 .section-title::after {
     content: "●";
-    color: var(--accent);
+    color: #AD71F2;
     margin-left: 0.2em;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    vertical-align: -0.075em;
 }
 
 .section-subtitle {
@@ -362,22 +368,70 @@ main {
     transform: translateY(0);
 }
 
-.product-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: var(--space-sm);
-    display: block;
-    opacity: 0.8;
+/* Press card coral accents */
+.product-card:first-of-type::before {
+    background: #FF6B6B;
 }
 
-.product-name {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: var(--space-xs);
+.product-card:first-of-type .product-url:hover {
+    color: #FF6B6B;
+    background: rgba(255, 107, 107, 0.05);
+    border-color: rgba(255, 107, 107, 0.15);
+}
+
+.product-card:first-of-type .product-features li::before {
+    color: #FF6B6B;
+}
+
+.product-card:first-of-type .btn-primary:hover {
+    background: #FF6B6B;
+    border-color: #FF6B6B;
+}
+
+/* Hero Press button coral hover */
+.hero-cta .btn-primary:hover {
+    background: #FF6B6B;
+    border-color: #FF6B6B;
+}
+
+/* Hero Studio button blue hover */
+.hero-cta .btn-secondary:hover {
+    background: #4A90E2;
+    border-color: #4A90E2;
+}
+
+/* Studio card blue accents */
+.product-card:last-of-type::before {
+    background: #4A90E2;
+}
+
+.product-card:last-of-type .product-url:hover {
+    color: #4A90E2;
+    background: rgba(74, 144, 226, 0.05);
+    border-color: rgba(74, 144, 226, 0.15);
+}
+
+.product-card:last-of-type .product-features li::before {
+    color: #4A90E2;
+}
+
+.product-card:last-of-type .btn-primary:hover {
+    background: #4A90E2;
+    border-color: #4A90E2;
+}
+
+
+.product-header {
     display: flex;
-    align-items: baseline;
-    gap: var(--space-sm);
-    font-family: var(--font-serif);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+}
+
+.product-logo {
+    width: 7rem;
+    height: auto;
+    margin-bottom: 0;
 }
 
 .product-url {
@@ -385,6 +439,19 @@ main {
     color: var(--text-tertiary);
     font-family: var(--font-sans);
     font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.product-url:hover {
+    color: var(--accent);
+    background: rgba(74, 144, 226, 0.05);
+    border-color: rgba(74, 144, 226, 0.15);
 }
 
 .product-tagline {
@@ -423,7 +490,7 @@ main {
 }
 
 .product-cta {
-    margin-top: var(--space-sm);
+    margin-top: var(--space-md);
     display: inline-block;
 }
 
@@ -812,6 +879,10 @@ footer {
         gap: 6px;
     }
 
+    .logo-svg {
+        height: 36px;
+    }
+
     .logo-dot {
         font-size: 0.4em;
     }
@@ -896,11 +967,14 @@ footer {
         padding: var(--space-md);
     }
 
-    .product-name {
-        font-size: 1.6rem;
+    .product-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.25rem;
+        gap: var(--space-xs);
+    }
+
+    .product-logo {
+        width: 5.5rem;
     }
 
     .product-url {
@@ -1064,6 +1138,10 @@ footer {
 
     .logo {
         font-size: 1.4rem;
+    }
+
+    .logo-svg {
+        height: 32px;
     }
 
     nav {
