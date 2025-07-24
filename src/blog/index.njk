@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Blog
-description: Thoughts on the future of scientific publishing and knowledge infrastructure
+tags: []
 ---
 
 <section class="blog-hero">
@@ -16,27 +16,20 @@ description: Thoughts on the future of scientific publishing and knowledge infra
         <div class="post-list">
             {% set posts = collections.post | reverse %}
             {% for post in posts %}
+            {% if post.url != "/blog/" %}
             <article class="post-preview">
                 <h2 class="post-title">
                     <a href="{{ post.url }}">{{ post.data.title }}</a>
                 </h2>
                 <p class="post-meta">{{ post.date | dateFormat }} • {{ post.data.author or 'Aris Team' }}</p>
                 <div class="post-excerpt">
-                    {{ post.data.description or (post.templateContent | excerpt) | safe }}
+                    {{ post.data.description | safe }}
                 </div>
                 <a href="{{ post.url }}" class="read-more">Read more →</a>
             </article>
+            {% endif %}
             {% endfor %}
             
-            {% if posts.length == 0 %}
-            <div class="post-preview">
-                <h2 class="post-title">Coming Soon</h2>
-                <p class="post-meta">Aris Team</p>
-                <div class="post-excerpt">
-                    We're preparing thoughtful content about the future of scientific publishing, research infrastructure, and open science. Check back soon for our first posts!
-                </div>
-            </div>
-            {% endif %}
         </div>
     </div>
 </section>

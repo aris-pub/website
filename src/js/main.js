@@ -33,4 +33,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update on page load
         updateActiveNavLink();
     }
+
+    // Back to top button functionality
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    function toggleBackToTopButton() {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    }
+    
+    window.addEventListener('scroll', toggleBackToTopButton);
+    
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
