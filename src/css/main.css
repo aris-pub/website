@@ -254,7 +254,7 @@ main {
 
 /* Hero Section */
 .hero {
-    padding: var(--space-xl) 0 var(--space-lg);
+    padding: var(--space-lg) 0 var(--space-lg);
     text-align: center;
     min-height: 70vh;
     display: flex;
@@ -663,7 +663,7 @@ main {
     font-weight: 300;
     margin-bottom: var(--space-sm);
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     color: var(--text-primary);
 }
 
@@ -1439,6 +1439,10 @@ footer {
 
 [data-theme="dark"] .back-to-top:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .back-to-top .hero-icon {
+    filter: invert(1);
 }
 
 [data-theme="dark"] .dark-mode-toggle {
