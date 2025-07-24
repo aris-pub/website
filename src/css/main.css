@@ -1117,24 +1117,49 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* Philosophy section */
+    /* Philosophy section - add proper mobile spacing */
+    .philosophy {
+        padding: var(--space-xl) 0;
+        margin-top: var(--space-xl);
+    }
+
+    .philosophy .section-header {
+        margin-bottom: var(--space-xl);
+    }
+
     .pillars {
+        display: flex;
         flex-direction: column;
-        gap: var(--space-md);
-    }
-
-    .pillar,
-    .pillar:nth-child(even) {
-        flex-direction: row;
-    }
-
-    .pillar-content,
-    .pillar:nth-child(even) .pillar-content {
-        text-align: left;
+        gap: var(--space-lg);
+        margin-top: 0;
+        margin-bottom: var(--space-xl);
     }
 
     .pillar {
-        padding: var(--space-md);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: var(--space-lg);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .pillar:nth-child(2),
+    .pillar:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .pillar-content,
+    .pillar:nth-child(2) .pillar-content,
+    .pillar:nth-child(4) .pillar-content {
+        text-align: center;
+    }
+
+    .pillar-visual {
+        width: 100px;
+        height: 100px;
+        margin-bottom: var(--space-md);
     }
 
     .pillar-icon {
