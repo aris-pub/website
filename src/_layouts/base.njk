@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - Aris</title>
-    <meta name="description" content="{{ description or 'Infrastructure for the post-PDF era' }}">
+    <title>{% if title == "Infrastructure for the post-PDF era" %}Aris - Academic Publishing for the Post-PDF Era{% else %}{{ title }} - Aris{% endif %}</title>
+    <meta name="description" content="{{ description or 'Web-native academic publishing tools. Create, share, and preserve knowledge with Press and Studio - infrastructure for the post-PDF era.' }}">
+    <meta name="keywords" content="academic publishing, web-native, scholarly communication, preprint server, research tools, open science">
+    <meta name="author" content="Aris">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}">
+    <meta property="og:title" content="{% if title == "Infrastructure for the post-PDF era" %}Aris - Academic Publishing for the Post-PDF Era{% else %}{{ title }} - Aris{% endif %}">
+    <meta property="og:description" content="{{ description or 'Web-native academic publishing tools. Create, share, and preserve knowledge with Press and Studio - infrastructure for the post-PDF era.' }}">
+    <meta property="og:image" content="{{ metadata.url }}/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}">
+    <meta property="twitter:title" content="{% if title == "Infrastructure for the post-PDF era" %}Aris - Academic Publishing for the Post-PDF Era{% else %}{{ title }} - Aris{% endif %}">
+    <meta property="twitter:description" content="{{ description or 'Web-native academic publishing tools. Create, share, and preserve knowledge with Press and Studio - infrastructure for the post-PDF era.' }}">
+    <meta property="twitter:image" content="{{ metadata.url }}/images/og-image.png">
+    
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url) }}">
     <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Aris",
+        "url": "{{ metadata.url }}",
+        "description": "{{ metadata.description }}",
+        "sameAs": [
+            "https://github.com/leotrs/aris"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "General Inquiry",
+            "email": "{{ metadata.author.email }}"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
