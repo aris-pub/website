@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://aris.dev/sitemap.xml
+
+# Block access to admin/internal paths if they exist
+Disallow: /admin/
+Disallow: /.env
+Disallow: /config/
+
+# Allow all academic content
+Allow: /blog/
+Allow: /papers/
+Allow: /docs/

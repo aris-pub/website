@@ -1,0 +1,32 @@
+{
+  "name": "Aris - Academic Publishing for the Post-PDF Era",
+  "short_name": "Aris",
+  "description": "Web-native academic publishing tools. Create, share, and preserve knowledge with Press and Studio.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf8",
+  "theme_color": "#AD71F2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logos/aris-64.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/images/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}

@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title == "Infrastructure for the post-PDF era" %}Aris - Academic Publishing for the Post-PDF Era{% else %}{{ title }} - Aris{% endif %}</title>
     <meta name="description" content="{{ description or 'Web-native academic publishing tools. Create, share, and preserve knowledge with Press and Studio - infrastructure for the post-PDF era.' }}">
-    <meta name="keywords" content="academic publishing, web-native, scholarly communication, preprint server, research tools, open science">
+    <meta name="keywords" content="academic publishing, web-native, scholarly communication, preprint server, research tools, open science, RSM, readable science markup, collaborative writing, semantic documents">
     <meta name="author" content="Aris">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#AD71F2">
+    <meta name="msapplication-TileColor" content="#AD71F2">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -25,6 +28,12 @@
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url) }}">
     <link rel="stylesheet" href="/css/main.css">
     
+    <!-- Favicon and app icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -33,6 +42,8 @@
         "name": "Aris",
         "url": "{{ metadata.url }}",
         "description": "{{ metadata.description }}",
+        "logo": "{{ metadata.url }}/images/logos/aris-64.svg",
+        "foundingDate": "2024",
         "sameAs": [
             "https://github.com/leotrs/aris"
         ],
@@ -40,6 +51,32 @@
             "@type": "ContactPoint",
             "contactType": "General Inquiry",
             "email": "{{ metadata.author.email }}"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Academic Publishing Tools",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "SoftwareApplication",
+                        "name": "Press",
+                        "description": "A modern preprint server for web-native research",
+                        "url": "https://scroll.press",
+                        "applicationCategory": "Academic Publishing"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "SoftwareApplication",
+                        "name": "Studio",
+                        "description": "A collaborative editor for RSM (Readable Science Markup)",
+                        "url": "https://rsm.studio",
+                        "applicationCategory": "Writing Tool"
+                    }
+                }
+            ]
         }
     }
     </script>
