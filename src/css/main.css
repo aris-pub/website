@@ -536,7 +536,7 @@ main {
 
 /* Single Post */
 .post {
-    padding: var(--space-xl) 0;
+    padding: var(--space-lg) 0;
 }
 
 .post-header {
@@ -610,6 +610,18 @@ main {
 .post-content pre code {
     background: none;
     padding: 0;
+}
+
+.post-content a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.post-content a:hover {
+    color: var(--accent-dark);
+    text-decoration: underline;
 }
 
 /* Back to top button */
