@@ -90,20 +90,23 @@ header {
 }
 
 .logo {
-    font-size: 1.75rem;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    color: var(--text-primary);
-    text-decoration: none;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
-.logo-svg {
-    height: 40px;
+.logo-mark {
+    height: 1.5rem;
     width: auto;
+}
+
+.logo-type {
+    font-family: Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 .logo-dot {
@@ -499,10 +502,23 @@ main {
     margin-bottom: var(--space-sm);
 }
 
+.product-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
 .product-logo {
-    width: 7rem;
-    height: auto;
-    margin-bottom: 0;
+    height: 1.5rem;
+    width: auto;
+}
+
+.product-logo-type {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
 }
 
 .product-url {
@@ -989,8 +1005,12 @@ footer {
         gap: 6px;
     }
 
-    .logo-svg {
-        height: 36px;
+    .logo-mark {
+        height: 1.5rem;
+    }
+    
+    .logo-type {
+        font-size: 1.5rem;
     }
 
     .logo-dot {
@@ -1098,7 +1118,12 @@ footer {
     }
 
     .product-logo {
-        width: 5.5rem;
+        height: 1.5rem;
+        width: auto;
+    }
+    
+    .product-logo-type {
+        font-size: 1.3rem;
     }
 
     .product-url {
@@ -1299,8 +1324,12 @@ footer {
         font-size: 1.4rem;
     }
 
-    .logo-svg {
-        height: 32px;
+    .logo-mark {
+        height: 1.5rem;
+    }
+    
+    .logo-type {
+        font-size: 1.3rem;
     }
 
     nav {
