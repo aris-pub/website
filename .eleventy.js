@@ -22,6 +22,12 @@ module.exports = function(eleventyConfig) {
     return excerpt || content.substring(0, 200) + "...";
   });
 
+  // Add absoluteUrl filter
+  eleventyConfig.addFilter("absoluteUrl", (url, base) => {
+    if (!base) return url;
+    return new URL(url, base).toString();
+  });
+
   return {
     dir: {
       input: "src",
