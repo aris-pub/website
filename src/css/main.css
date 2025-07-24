@@ -1303,7 +1303,7 @@ footer {
 /* Dark Mode Toggle */
 .dark-mode-toggle {
     position: fixed;
-    top: var(--space-md);
+    bottom: calc(var(--space-md) + 60px);
     right: var(--space-md);
     width: 48px;
     height: 48px;
@@ -1317,6 +1317,7 @@ footer {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
 }
 
 .dark-mode-toggle:hover {
@@ -1327,7 +1328,7 @@ footer {
 .dark-mode-toggle svg {
     width: 20px;
     height: 20px;
-    fill: var(--text-primary);
+    stroke: var(--text-primary);
     transition: all 0.3s ease;
 }
 
@@ -1348,6 +1349,22 @@ footer {
 
 [data-theme="dark"] .product-card:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .pillar:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .back-to-top:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .dark-mode-toggle {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .dark-mode-toggle:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -1371,4 +1388,19 @@ footer {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     }
 
+    :root:not([data-theme]) .pillar:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    :root:not([data-theme]) .back-to-top:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    :root:not([data-theme]) .dark-mode-toggle {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    :root:not([data-theme]) .dark-mode-toggle:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
 }
