@@ -1,0 +1,26 @@
+{
+  "name": "aris-website",
+  "version": "1.0.0",
+  "description": "Landing page and blog for Aris - Infrastructure for the post-PDF era",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "blog",
+    "static-site"
+  ],
+  "author": "Aris",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@cdransf/eleventy-plugin-tabler-icons": "^2.13.2",
+    "@tabler/icons": "^3.34.1",
+    "heroicons": "^2.2.0"
+  }
+}

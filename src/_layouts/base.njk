@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Aris</title>
+    <meta name="description" content="{{ description or 'Infrastructure for the post-PDF era' }}">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    ARIS<span class="logo-dot">●</span>
+                </a>
+                <nav>
+                    <a href="/#products" {% if page.url == '/' %}class="active"{% endif %}>Products</a>
+                    <a href="/#philosophy">Philosophy</a>
+                    <a href="/#about">About</a>
+                    <a href="/blog/" {% if page.url.startsWith('/blog/') %}class="active"{% endif %}>Blog</a>
+                    <a href="https://github.com/leotrs/aris">GitHub</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copy">
+                    © {{ helpers.currentYear() }} Aris. Academic publishing: web-native, human-first.
+                </div>
+                <div class="footer-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                    <a href="https://github.com/leotrs/aris">GitHub</a>
+                    <a href="mailto:hello@aris.pub">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
