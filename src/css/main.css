@@ -379,9 +379,6 @@ main {
     gap: var(--space-lg);
     margin-top: var(--space-lg);
     padding: 10px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .product-card {
