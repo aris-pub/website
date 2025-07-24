@@ -52,14 +52,28 @@
                 <a href="/" class="logo">
                     ARIS<span class="logo-dot">●</span>
                 </a>
-                <nav>
-                    <a href="/#products">Products</a>
-                    <a href="/#philosophy">Philosophy</a>
-                    <a href="/#about">About</a>
-                    <a href="/blog/" {% if page.url.startsWith('/blog/') %}class="active"{% endif %}>Blog</a>
-                    <a href="https://github.com/leotrs/aris">GitHub</a>
-                </nav>
+                <div class="header-right">
+                    <nav class="desktop-nav">
+                        <a href="/#products">Products</a>
+                        <a href="/#philosophy">Philosophy</a>
+                        <a href="/#about">About</a>
+                        <a href="/blog/" {% if page.url.startsWith('/blog/') %}class="active"{% endif %}>Blog</a>
+                        <a href="https://github.com/leotrs/aris">GitHub</a>
+                    </nav>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
             </div>
+            <nav class="mobile-nav">
+                <a href="/#products">Products</a>
+                <a href="/#philosophy">Philosophy</a>
+                <a href="/#about">About</a>
+                <a href="/blog/" {% if page.url.startsWith('/blog/') %}class="active"{% endif %}>Blog</a>
+                <a href="https://github.com/leotrs/aris">GitHub</a>
+            </nav>
         </div>
     </header>
 

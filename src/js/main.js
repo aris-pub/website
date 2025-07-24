@@ -34,6 +34,34 @@ document.addEventListener('DOMContentLoaded', function() {
         updateActiveNavLink();
     }
 
+    // Mobile menu functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    
+    if (mobileMenuToggle && mobileNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileNavLinks = mobileNav.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mobileMenuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+            }
+        });
+    }
+
     // Back to top button functionality
     const backToTopButton = document.getElementById('back-to-top');
     
