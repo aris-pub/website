@@ -274,6 +274,16 @@ main {
     font-family: var(--font-serif);
 }
 
+.hero-secondary {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-serif);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
 .hero .subtitle {
     font-size: 1.4rem;
     color: var(--text-secondary);
@@ -1064,6 +1074,10 @@ footer {
         margin-bottom: var(--space-md);
     }
 
+    .hero-secondary {
+        font-size: 1.6rem;
+        margin-bottom: var(--space-sm);
+    }
     .hero .subtitle {
         font-size: 1.2rem;
         margin-bottom: var(--space-lg);
@@ -1350,6 +1364,10 @@ footer {
 
     .hero h1 {
         font-size: clamp(1.8rem, 7vw, 2.2rem);
+    }
+
+    .hero-secondary {
+        font-size: 1.4rem;
     }
 
     .hero .subtitle {
