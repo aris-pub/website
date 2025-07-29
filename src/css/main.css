@@ -400,6 +400,7 @@ main {
     transition: all 0.3s ease;
     position: relative;
     border: 1px solid var(--border-light);
+    border-top: 4px solid transparent;
     border-radius: 8px;
     min-height: 500px;
     display: flex;
@@ -411,7 +412,6 @@ main {
 .product-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    border-color: transparent;
 }
 
 /* Press card coral accents */
@@ -421,8 +421,6 @@ main {
 
 .product-card:first-of-type .product-url:hover {
     color: #FF6B6B;
-    background: rgba(255, 107, 107, 0.05);
-    border-color: rgba(255, 107, 107, 0.15);
 }
 
 .product-card:first-of-type .product-features li::before {
@@ -472,8 +470,6 @@ main {
 
 .product-card:last-of-type .product-url:hover {
     color: #4A90E2;
-    background: rgba(74, 144, 226, 0.05);
-    border-color: rgba(74, 144, 226, 0.15);
 }
 
 .product-card:last-of-type .product-features li::before {
@@ -531,24 +527,50 @@ main {
     letter-spacing: -0.01em;
 }
 
-.product-url {
-    font-size: 0.9rem;
-    color: var(--text-tertiary);
-    font-family: var(--font-sans);
+.status-badge {
+    font-size: 0.7rem;
     font-weight: 400;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    padding: 0.5rem 0.75rem;
-    background: transparent;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-family: var(--font-sans);
+    letter-spacing: 0.02em;
     display: inline-block;
 }
 
+.status-badge-beta {
+    color: #059669;
+    border: 1px solid #059669;
+    background: rgba(5, 150, 105, 0.05);
+}
+
+.status-badge-dev {
+    color: var(--text-secondary);
+    border: 1px solid var(--text-secondary);
+    background: rgba(74, 74, 74, 0.05);
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-sm);
+}
+
+.product-url {
+    font-size: 0.8rem;
+    color: #a3a3a3;
+    font-family: var(--font-sans);
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
 .product-url:hover {
-    color: var(--accent);
-    background: rgba(74, 144, 226, 0.05);
-    border-color: rgba(74, 144, 226, 0.15);
+    color: var(--text-secondary);
 }
 
 .product-tagline {
@@ -1138,6 +1160,16 @@ footer {
     
     .product-logo-type {
         font-size: 1.3rem;
+    }
+    .status-badge {
+        font-size: 0.65rem;
+        padding: 0.1rem 0.4rem;
+    }
+    
+    .product-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-xs);
     }
 
     .product-url {
