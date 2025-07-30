@@ -19,7 +19,7 @@
     
     /* Typography - More differentiated */
     --font-serif: 'Georgia', 'Garamond', 'Times New Roman', serif;
-    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     
     /* Spacing - More generous */
     --space-xs: 0.75rem;
@@ -621,7 +621,7 @@ main {
 
 .pillars {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: var(--space-lg);
     margin-top: var(--space-lg);
     padding: 5px;
@@ -637,7 +637,6 @@ main {
     border-radius: 4px;
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
 }
 
 .pillar:nth-child(2) {
@@ -671,6 +670,7 @@ main {
 .pillar-content {
     flex: 1;
     text-align: left;
+    min-width: 0; /* Allows flex item to shrink below content size */
 }
 
 
@@ -719,6 +719,8 @@ main {
     font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.7;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* About Section */
@@ -861,7 +863,8 @@ main {
 
 .community-links .pathway-cta {
     flex: 1;
-    min-width: 0;
+    min-width: max-content;
+    white-space: nowrap;
 }
 
 .pathway-cta {
@@ -1155,7 +1158,7 @@ footer {
     }
 
     .logo-mark {
-        height: 1.5rem;
+        height: 1.29rem; /* Scales with logo-type: 1.5/1.75 = 0.857, so 1.5 * 0.857 = 1.29 */
     }
     
     .logo-type {
@@ -1524,7 +1527,7 @@ footer {
     }
 
     .logo-mark {
-        height: 1.5rem;
+        height: 1.11rem; /* Scales with logo-type: 1.3/1.75 = 0.743, so 1.5 * 0.743 = 1.11 */
     }
     
     .logo-type {

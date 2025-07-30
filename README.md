@@ -56,4 +56,4 @@ src/
 - ✅ SEO optimized with structured data
 - ✅ Performance optimized
 - ✅ Accessible design
-- ✅ Academic-focused design for Preview Press and RSM Studio
+- ✅ Academic-focused design for Scroll Press and RSM Studio

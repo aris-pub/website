@@ -31,7 +31,7 @@ where it needs to be tomorrow.
 
 Our first two tools embody this philosophy:
 
-<span style="color: #FF6B6B; font-weight: bold;">Preview Press</span> is a modern
+<span style="color: #FF6B6B; font-weight: bold;">Scroll Press</span> is a modern
 preprint server designed for web-native research. Instead of forcing you to squeeze
 everything into PDF constraints, it accepts documents in any HTML format and gives them
 permanent URLs, version tracking, and community discussions. Your research can finally
@@ -164,7 +164,7 @@ prioritize accessibility over visual consistency, collaboration over control, op
 standards over proprietary formats, we're building that future.
 
 If you're ready to move beyond the limitations of print-era thinking, we'd love to have
-you join us. Try [<span style="color: #FF6B6B; font-weight: bold;">Preview
+you join us. Try [<span style="color: #FF6B6B; font-weight: bold;">Scroll
 Press</span>](https://prev.press) for your next preprint. Experiment with [<span
 style="color: #4A90E2; font-weight: bold;">RSM Studio</span>](https://rsm.studio) for
 collaborative writing. Join our [<span style="font-weight: bold;">Zulip
