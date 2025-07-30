@@ -1,7 +1,7 @@
 ---
 title: "Introducing Aris: The publishing platform for the Post-PDF Era"
 date: 2025-07-24
-author: "Aris Team"
+author: "Leo Torres"
 description: "We're building the future of academic publishing: tools that make it easy to create, share, and preserve knowledge in formats designed for the web, not the printing press."
 tags: ["announcement", "mission", "tools", "academic-publishing"]
 ---
@@ -175,5 +175,5 @@ publishing. Share your thoughts on what academic publishing should become.
   <img src="/images/logos/aris-logo-64.svg" alt="Aris" style="width: 64px; height: 64px; opacity: 0.4;" />
 </div>
 
-*Join the Aris team in reimagining how researchers create, share, and preserve knowledge
-with web-native, human-first tools.*
+*Join Aris in reimagining how researchers create, share, and preserve knowledge with
+web-native, human-first tools.*
