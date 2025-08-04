@@ -165,7 +165,7 @@ standards over proprietary formats, we're building that future.
 
 If you're ready to move beyond the limitations of print-era thinking, we'd love to have
 you join us. Try [<span style="color: #FF6B6B; font-weight: bold;">Scroll
-Press</span>](https://prev.press) for your next preprint. Experiment with [<span
+Press</span>](https://scroll.press) for your next preprint. Experiment with [<span
 style="color: #4A90E2; font-weight: bold;">RSM Studio</span>](https://rsm.studio) for
 collaborative writing. Join our [<span style="font-weight: bold;">Zulip
 Community</span>](https://aris-pub.zulipchat.com/) to discuss the future of academic
