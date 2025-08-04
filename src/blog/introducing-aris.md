@@ -6,7 +6,7 @@ description: "We're building the future of academic publishing: tools that make 
 tags: ["announcement", "mission", "tools", "academic-publishing"]
 ---
 
-# Introducing Aris: The publishing platform for the Post-PDF Era
+# Introducing Aris: The publishing platform for the Post-PDF Era<span style="color: #AD71F2; font-size: 1.5em;">.</span>
 
 *July 24, 2025 • Aris Team*
 
