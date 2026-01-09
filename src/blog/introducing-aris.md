@@ -32,15 +32,15 @@ where it needs to be tomorrow.
 Our first two tools embody this philosophy:
 
 <span style="color: #FF6B6B; font-weight: bold;">Scroll Press</span> is a modern
-preprint server designed for web-native research. Instead of forcing you to squeeze
-everything into PDF constraints, it accepts documents in any HTML format and gives them
-permanent URLs, version tracking, and community discussions. Your research can finally
-be as dynamic and interactive as your ideas.
+preprint server designed for web-native research. Publish from any authoring tool that
+produces HTML—Typst, Quarto, MyST, Jupyter, or handwritten HTML. Get permanent URLs,
+version tracking, and community discussions instantly. Press doesn't dictate how you
+write—it just hosts what you create.
 
-<span style="color: #4A90E2; font-weight: bold;">RSM Studio</span> is a collaborative
-editor for RSM (Readable Science Markup), a format that preserves the meaning of your
-content while enabling beautiful presentation across all devices. Write once, read
-everywhere, from mobile phones to printed pages, with the semantic structure intact.
+<span style="color: #4A90E2; font-weight: bold;">RSM Studio</span> is the reference
+implementation and collaborative editor for RSM (Readable Science Markup). Write
+documents that preserve semantic meaning and render beautifully everywhere—from mobile
+phones to printed pages.
 
 ## Why This Matters
 
@@ -110,6 +110,20 @@ learning curves for basic tasks. No fighting with formatting when you should be 
 No choosing between accessibility and aesthetics. We believe that academic tools should
 be as polished and intuitive as the best consumer software, because researchers deserve
 interfaces that match the sophistication of their thinking.
+
+## How We're Building This
+
+Aris is supported by community donations and academic grants—not venture capital equity. This funding model lets us prioritize
+research community needs over investor returns.
+
+**Our governance varies by product:**
+- **Press**: Fully community-owned—open source, community contributions, shared governance, forever free
+- **Studio**: Community-maintained reference implementation—open source, bug reports
+and maintenance contributions accepted
+- **Forum** (launching 2029-2030): Open core model—basic features free and open source forever,
+  premium SaaS (hosting + support) funds development for everyone
+
+We're spending the next few years building community trust. Patient capital beats growth hacking.
 
 ## A Human-First Approach
 

@@ -25,8 +25,8 @@ specific needs.
 
 ### Core Principles
 
-**Universal**: Works on any device, for any user, in any context. No barriers to access.
-**Transparent**: Your research, your control. Everything exportable and built on open standards.
+**Universal**: Works on any device, for any user, in any context. No barriers to access. Supported by community donations and academic grants, not optimized for investor exits.
+**Transparent**: Your research, your control. Everything exportable and built on open standards. Community governance varies by product: Press (full community), Studio (maintenance), Forum (open core, launching 2029-2030).
 **Interactive**: Research is conversation. Enable dialogue and knowledge that builds over time.
 **Inviting**: Beautiful, effortless experiences that respect your time and focus.
 
