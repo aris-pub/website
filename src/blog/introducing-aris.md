@@ -186,7 +186,7 @@ Community</span>](https://aris-pub.zulipchat.com/) to discuss the future of acad
 publishing. Share your thoughts on what academic publishing should become.
 
 <div style="text-align: center; margin: 4rem 0;">
-  <img src="/images/logos/aris-logo-64.svg" alt="Aris" style="width: 64px; height: 64px; opacity: 0.4;" />
+  <img src="/brand/logos/aris/aris-logo-64.svg" alt="Aris" style="width: 64px; height: 64px; opacity: 0.4;" />
 </div>
 
 *Join Aris in reimagining how researchers create, share, and preserve knowledge with

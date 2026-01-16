@@ -4,6 +4,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/admin");
+
+  // Copy brand assets from submodule
+  eleventyConfig.addPassthroughCopy({"brand/logos": "brand/logos"});
   
   // Copy Heroicons
   eleventyConfig.addPassthroughCopy({"node_modules/heroicons/24/outline": "icons"});
