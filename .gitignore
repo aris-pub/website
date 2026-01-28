@@ -3,4 +3,7 @@ _site/
 .DS_Store
 *.log
 .env
-.cache/
+.cache
+
+# Claude skills symlink
+.claude/skills
