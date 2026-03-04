@@ -28,26 +28,14 @@ I'm not building this as a quick fix or a side project. A decade in academia tau
 
 <style>
 .old-text {
-  color: #7a7a7a;
+  color: var(--text-tertiary);
   font-style: italic;
   filter: blur(0.5px);
   opacity: 0.6;
 }
 
-[data-theme="dark"] .old-text {
-  color: #b0b0b0;
-  opacity: 0.8;
-}
-
 .gradient-text {
-  background: linear-gradient(135deg, #0a0a0a, #7a7a7a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-[data-theme="dark"] .gradient-text {
-  background: linear-gradient(135deg, #ffffff, #cccccc);
+  background: linear-gradient(135deg, var(--text-primary), var(--text-tertiary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
