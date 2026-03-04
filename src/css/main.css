@@ -977,7 +977,7 @@ main {
 }
 
 .post-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
     margin: var(--space-lg) 0 var(--space-md);
@@ -1438,7 +1438,7 @@ footer {
     }
 
     .post-content h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 1.2;
         margin-bottom: var(--space-md);
     }
