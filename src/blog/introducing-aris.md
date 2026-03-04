@@ -102,14 +102,16 @@ existing work via instant author-reader communication. Knowledge should accumula
 evolve, not sit frozen in isolated files. Every publication becomes a starting point for
 further discovery.
 
-**Inviting**: Beautiful, effortless experiences that respect your time and let you focus
+**Humane**: Beautiful, effortless experiences that respect your time, humanity, and let you focus
 on what matters.
 
 Good tools disappear into the background, letting your ideas take center stage. No
 learning curves for basic tasks. No fighting with formatting when you should be writing.
-No choosing between accessibility and aesthetics. We believe that academic tools should
-be as polished and intuitive as the best consumer software, because researchers deserve
-interfaces that match the sophistication of their thinking.
+No choosing between accessibility and aesthetics. But beyond efficiency, we recognize
+that researchers are people, not productivity machines. Science doesn't need celebration,
+but scientists do. We believe that academic tools should be as polished and intuitive as
+the best consumer software, because researchers deserve interfaces that match the
+sophistication of their thinking and honor the humanity of their journey.
 
 ## How We're Building This
 
