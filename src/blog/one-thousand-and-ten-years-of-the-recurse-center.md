@@ -240,7 +240,7 @@ time there:
 <p><em>Before being really good at something, you must really suck at it first.</em></p>
 </div>
 
-RC taught me all of that. That's what I would say to someone thinking about applying today: just do it.
+My time at RC was instrumental in arriving at these lessons. That's what I'd say to someone thinking about applying today: just do it.
 
 <p class="q">Any unfinished business?</p>
 
