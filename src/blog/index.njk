@@ -20,7 +20,7 @@ tags: []
             {% if post.url != "/blog/" %}
             <article class="post-preview">
                 <h2 class="post-title">
-                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    <a href="{{ post.url }}">{{ post.data.title }}<span style="color: #AD71F2; font-size: 1.5em;">.</span></a>
                 </h2>
                 <p class="post-meta">{{ post.date | dateFormat }} • {{ post.data.author or 'Aris Team' }}</p>
                 <div class="post-excerpt">
