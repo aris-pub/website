@@ -25,7 +25,7 @@ communication works. But it doesn't have to be.
 
 ## What We're Building
 
-**Aris is infrastructure for the post-PDF era**. We're not trying to replace everything
+**Aris is the open research stack**. We're not trying to replace everything
 overnight, instead we're building bridges from where academic publishing is today to
 where it needs to be tomorrow.
 
