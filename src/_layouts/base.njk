@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title == "The Open Research Stack" %}Aris — The Open Research Stack{% else %}{{ title }} - Aris{% endif %}</title>
-    <meta name="description" content="{{ description or 'The open research stack. Web-native, human-first tools for authoring, publishing, and reviewing research.' }}">
+    <meta name="description" content="{{ description or 'The open research stack. Web-native, human-first tools for authoring and publishing research.' }}">
     <meta name="keywords" content="academic publishing, web-native, scholarly communication, preprint server, research tools, open science, RSM, readable science markup, collaborative writing, semantic documents">
     <meta name="author" content="Aris">
     <meta name="robots" content="index, follow">
@@ -15,14 +15,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}">
     <meta property="og:title" content="{% if title == "The Open Research Stack" %}Aris — The Open Research Stack{% else %}{{ title }} - Aris{% endif %}">
-    <meta property="og:description" content="{{ description or 'The open research stack. Web-native, human-first tools for authoring, publishing, and reviewing research.' }}">
+    <meta property="og:description" content="{{ description or 'The open research stack. Web-native, human-first tools for authoring and publishing research.' }}">
     <meta property="og:image" content="{{ metadata.url }}/images/og-image.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ page.url | url | absoluteUrl(metadata.url) }}">
     <meta property="twitter:title" content="{% if title == "The Open Research Stack" %}Aris — The Open Research Stack{% else %}{{ title }} - Aris{% endif %}">
-    <meta property="twitter:description" content="{{ description or 'The open research stack. Web-native, human-first tools for authoring, publishing, and reviewing research.' }}">
+    <meta property="twitter:description" content="{{ description or 'The open research stack. Web-native, human-first tools for authoring and publishing research.' }}">
     <meta property="twitter:image" content="{{ metadata.url }}/images/og-image.png">
     
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url) }}">

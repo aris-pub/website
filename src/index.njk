@@ -1,19 +1,20 @@
 ---
 layout: base.njk
 title: The Open Research Stack
-description: The open research stack. Web-native, human-first tools for authoring, publishing, and reviewing research.
+description: The open research stack. Web-native, human-first tools for authoring and publishing research.
 ---
 
 <!-- Hero -->
 <section class="hero container" id="home">
     <h1>The Aris Program</h1>
+    <p class="hero-identity">The open research stack</p>
     <h2 class="hero-secondary">Publish and flourish</h2>
     <p class="subtitle">
-        We're building tools that enable researchers to create, share, and preserve knowledge effectively, beautifully, and openly.
+        Open infrastructure for scientific research. Web-native. Human-first.
     </p>
     <div class="hero-cta">
         <a href="https://scroll.press" class="btn btn-primary">Browse Press</a>
-        <a href="https://rsm.studio" class="btn btn-secondary">Start Writing</a>
+        <a href="https://rsm.studio" class="btn btn-secondary">Try Studio</a>
     </div>
 </section>
 
@@ -21,8 +22,8 @@ description: The open research stack. Web-native, human-first tools for authorin
 <section class="products" id="products">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">One Vision, Two Tools</h2>
-            <p class="section-subtitle">Write beautifully. Publish openly. Preserve knowledge.</p>
+            <h2 class="section-title">The Stack</h2>
+            <p class="section-subtitle">Modular tools for every stage of research publishing.</p>
         </div>
 
         <div class="products-grid">
@@ -36,15 +37,14 @@ description: The open research stack. Web-native, human-first tools for authorin
                 </div>
                 <p class="product-tagline">Publish openly</p>
                 <p class="product-description">
-                    A modern preprint server for web-native research. 
-                    Host documents from any authoring tool with permanent URLs, 
-                    version tracking, and community discussions.
+                    A preprint server for web-native research.
+                    Upload HTML from any authoring tool — Quarto, Typst, MyST, Jupyter, or handwritten — and get a permanent, citable URL with a DOI.
                 </p>
                 <ul class="product-features">
-                    <li>Accept any HTML format</li>
-                    <li>Permanent, citable URLs</li>
+                    <li>Accept HTML from any tool</li>
+                    <li>Permanent URLs with DOIs</li>
                     <li>Version history preserved</li>
-                    <li>Public comments and discussion</li>
+                    <li>Free forever</li>
                 </ul>
                 <div class="product-bottom">
                     <a href="https://scroll.press" class="product-cta btn btn-primary">Browse Press</a>
@@ -57,24 +57,36 @@ description: The open research stack. Web-native, human-first tools for authorin
                         <img src="/brand/logos/studio/studio-logo-64.svg" class="product-logo" alt="RSM Studio">
                         <span class="product-logo-type">RSM Studio</span>
                     </div>
-                    <span class="status-badge status-badge-beta">beta</span>
+                    <span class="status-badge status-badge-beta">invite-only beta</span>
                 </div>
-                <p class="product-tagline">Write beautifully</p>
+                <p class="product-tagline">Write together</p>
                 <p class="product-description">
-                    A collaborative editor for RSM (Readable Science Markup). 
-                    Create semantic documents that preserve meaning, enable interaction, 
-                    and render beautifully everywhere.
+                    A collaborative editor for RSM (Readable Science Markup).
+                    Create semantic documents that preserve meaning, render on any device, and support interactive content.
                 </p>
                 <ul class="product-features">
                     <li>Real-time collaboration</li>
                     <li>Semantic markup that preserves meaning</li>
-                    <li>Interactive content and feedback</li>
-                    <li>Export to any format</li>
+                    <li>Interactive figures and content</li>
+                    <li>Import from and export to popular formats</li>
                 </ul>
                 <div class="product-bottom">
-                    <a href="https://rsm.studio" class="product-cta btn btn-primary">Start Writing</a>
+                    <a href="https://rsm.studio" class="product-cta btn btn-primary">Try Studio</a>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showcase -->
+<section class="showcase" id="showcase">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">See what a web-native paper looks like</h2>
+        </div>
+        <div class="showcase-content">
+            <p>Interactive figures. Responsive on any screen. Permanently archived with a DOI.</p>
+            <a href="https://press.aris.pub/2026/glee-geometric-laplacian-eigenmap-embedding" class="btn btn-primary">Read a Paper on Press</a>
         </div>
     </div>
 </section>
@@ -85,26 +97,26 @@ description: The open research stack. Web-native, human-first tools for authorin
         <div class="section-header">
             <h2 class="section-title">Why Aris Exists</h2>
         </div>
-        
+
         <div class="problem-solutions">
-        <div class="problem-solution">
-            <p class="problem">Publishers control your work, your timeline, your audience</p>
-            <div class="arrow">→</div>
-            <p class="solution">Your research, your terms. Publish when ready, keep full rights, reach readers via immediate feedback</p>
+            <div class="problem-solution">
+                <p class="problem">Publishers control your work, your timeline, your audience</p>
+                <div class="arrow">→</div>
+                <p class="solution">Publish when ready, keep full rights, reach readers directly</p>
+            </div>
+
+            <div class="problem-solution">
+                <p class="problem">Research is locked in static PDFs that break on phones</p>
+                <div class="arrow">→</div>
+                <p class="solution">Web-native papers with interactive figures, readable on any device</p>
+            </div>
+
+            <div class="problem-solution">
+                <p class="problem">Readers can't see how conclusions were reached</p>
+                <div class="arrow">→</div>
+                <p class="solution">Version history shows every change. Interactive data reveals methodology. Open research you can verify.</p>
+            </div>
         </div>
-        
-        <div class="problem-solution">
-            <p class="problem">Valuable review insights buried in email threads</p>
-            <div class="arrow">→</div>
-            <p class="solution">Reviews that build knowledge. Every comment preserved with context, threaded discussions that travel with papers, insights that compound over time</p>
-        </div>
-        
-        <div class="problem-solution">
-            <p class="problem">Readers can't see how conclusions were reached</p>
-            <div class="arrow">→</div>
-            <p class="solution">Complete transparency. Version history shows every change, interactive data reveals methodology, open research you can trust</p>
-        </div>
-    </div>
     </div>
 </section>
 
@@ -115,72 +127,72 @@ description: The open research stack. Web-native, human-first tools for authorin
             <h2 class="section-title">Four Pillars</h2>
             <p class="section-subtitle">Every tool we build stands on these foundational principles.</p>
         </div>
-        
+
         <div class="pillars">
-        <div class="pillar">
-            <div class="pillar-visual">
-                <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/>
-                </svg>
+            <div class="pillar">
+                <div class="pillar-visual">
+                    <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/>
+                    </svg>
+                </div>
+                <div class="pillar-content">
+                    <h3 class="pillar-name">Universal</h3>
+                    <p class="pillar-description">
+                        Works on any device, for any user, in any context.
+                        Online or offline. No barriers to access.
+                    </p>
+                </div>
             </div>
-            <div class="pillar-content">
-                <h3 class="pillar-name">Universal</h3>
-                <p class="pillar-description">
-                    Works on any device, for any user, in any context. 
-                    Online or offline. No barriers to access.
-                </p>
-            </div>
-        </div>
 
-        <div class="pillar">
-            <div class="pillar-visual">
-                <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                </svg>
+            <div class="pillar">
+                <div class="pillar-visual">
+                    <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                    </svg>
+                </div>
+                <div class="pillar-content">
+                    <h3 class="pillar-name">Transparent</h3>
+                    <p class="pillar-description">
+                        Your research, your control. Everything is exportable,
+                        versionable, and built on open standards.
+                    </p>
+                </div>
             </div>
-            <div class="pillar-content">
-                <h3 class="pillar-name">Transparent</h3>
-                <p class="pillar-description">
-                    Your research, your control. Everything is exportable, 
-                    versionable, and built on open standards.
-                </p>
-            </div>
-        </div>
 
-        <div class="pillar">
-            <div class="pillar-visual">
-                <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
-                    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
-                </svg>
+            <div class="pillar">
+                <div class="pillar-visual">
+                    <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
+                        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                    </svg>
+                </div>
+                <div class="pillar-content">
+                    <h3 class="pillar-name">Interactive</h3>
+                    <p class="pillar-description">
+                        Research is conversation. Live figures, explorable data,
+                        and content that responds to the reader.
+                    </p>
+                </div>
             </div>
-            <div class="pillar-content">
-                <h3 class="pillar-name">Interactive</h3>
-                <p class="pillar-description">
-                    Research is conversation. Our tools enable dialogue, 
-                    feedback, and knowledge that builds over time.
-                </p>
-            </div>
-        </div>
 
-        <div class="pillar">
-            <div class="pillar-visual">
-                <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
-                    <path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/>
-                    <path d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95"/>
-                    <path d="m2 15 6 6"/>
-                    <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91"/>
-                </svg>
-            </div>
-            <div class="pillar-content">
-                <h3 class="pillar-name">Humane</h3>
-                <p class="pillar-description">
-                    Beautiful, effortless experiences that respect your
-                    time, humanity, and let you focus on what matters.
-                </p>
+            <div class="pillar">
+                <div class="pillar-visual">
+                    <svg class="pillar-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor">
+                        <path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/>
+                        <path d="m14.45 13.39 5.05-4.694C20.196 8 21 6.85 21 5.75a2.75 2.75 0 0 0-4.797-1.837.276.276 0 0 1-.406 0A2.75 2.75 0 0 0 11 5.75c0 1.2.802 2.248 1.5 2.946L16 11.95"/>
+                        <path d="m2 15 6 6"/>
+                        <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a1 1 0 0 0-2.75-2.91"/>
+                    </svg>
+                </div>
+                <div class="pillar-content">
+                    <h3 class="pillar-name">Humane</h3>
+                    <p class="pillar-description">
+                        Beautiful, effortless experiences that respect your
+                        time, humanity, and let you focus on what matters.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
 </section>
 
 <!-- About -->
@@ -191,60 +203,47 @@ description: The open research stack. Web-native, human-first tools for authorin
         </div>
         <div class="about-content">
             <p>
-                Scientific communication is trapped in formats designed for paper, not pixels. Built for researchers by researchers.
+                Aris is the open research stack — modular tools for authoring, publishing, and reviewing research, owned by the community they serve.
             </p>
             <p>
-                We've all struggled with PDFs on phones, lost context in email threads, 
-                watched valuable discussions vanish after conferences. Knowledge gets 
-                locked in static files while the world has moved to dynamic, 
-                interconnected information.
+                Every paper on Press has a named researcher who stands behind the claims. Every document works on any screen, any device, any ability. And the stack evolves: as research technology changes, the infrastructure adapts alongside it.
             </p>
             <p>
-                Aris is building the infrastructure for how research should work: 
-                accessible everywhere, preserving context, enabling real collaboration. 
-                From first draft to final archive, every step should be seamless.
+                Aris is built by Leo Torres, a researcher in network science with 20 years of experience writing code. No investors. No advisory board. Open source from day one.
             </p>
             <p>
-                We're independent, researcher-focused, and committed to open science. 
-                Unlike venture-backed platforms that must prioritize investor returns, 
-                we maintain our integrity through a sustainable model: free for individual 
-                researchers, premium for institutions. This means our incentives align 
-                with yours—advancing knowledge, not chasing exits.
-            </p>
-            <p>
-                Because the tools of knowledge should be as thoughtful as the 
-                knowledge itself.
+                The open research stack. Web-native. Human-first.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Join the Movement -->
+<!-- Work With Us -->
 <section class="join-movement" id="join-movement">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Join the Movement</h2>
+            <h2 class="section-title">Work With Us</h2>
             <p class="section-subtitle">Publish and flourish with Aris</p>
         </div>
-        
+
         <div class="movement-pathways">
-        <div class="pathway">
-            <h3 class="pathway-title">Read & Connect</h3>
-            <p class="pathway-description">Follow our journey building web-native academic publishing or get in touch with ideas</p>
-            <div class="community-links">
-                <a href="/blog" class="pathway-cta btn btn-primary">Read Blog</a>
-                <a href="mailto:hello@aris.pub" class="pathway-cta btn btn-secondary">Contact Us</a>
+            <div class="pathway">
+                <h3 class="pathway-title">Read & Connect</h3>
+                <p class="pathway-description">Read the blog or get in touch</p>
+                <div class="community-links">
+                    <a href="/blog" class="pathway-cta btn btn-primary">Read the Blog</a>
+                    <a href="mailto:hello@aris.pub" class="pathway-cta btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="pathway">
+                <h3 class="pathway-title">Contribute</h3>
+                <p class="pathway-description">All Aris tools are open source</p>
+                <div class="community-links">
+                    <a href="https://aris-pub.zulipchat.com/" class="pathway-cta btn btn-primary">Join Zulip</a>
+                    <a href="https://github.com/aris-pub" class="pathway-cta btn btn-secondary">GitHub</a>
+                </div>
             </div>
         </div>
-        
-        <div class="pathway">
-            <h3 class="pathway-title">Join the Community</h3>
-            <p class="pathway-description">Connect with researchers and developers shaping the future of scholarly communication</p>
-            <div class="community-links">
-                <a href="https://aris-pub.zulipchat.com/" class="pathway-cta btn btn-primary">Join Zulip</a>
-                <a href="https://github.com/aris-pub" class="pathway-cta btn btn-secondary">GitHub</a>
-            </div>
-        </div>
-    </div>
     </div>
 </section>
