@@ -770,14 +770,6 @@ main {
     font-size: 1.15rem;
 }
 
-.about-content p:first-of-type {
-    font-size: 1.5rem;
-    color: var(--text-primary);
-    font-weight: 300;
-    font-family: var(--font-serif);
-    font-style: italic;
-    margin-bottom: var(--space-lg);
-}
 
 /* Why Aris Exists Section */
 .why-exists {
