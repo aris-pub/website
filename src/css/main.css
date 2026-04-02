@@ -770,6 +770,17 @@ main {
     font-size: 1.15rem;
 }
 
+.about-content a {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    transition: color 0.2s ease;
+}
+
+.about-content a:hover {
+    color: var(--accent);
+}
+
 
 /* Why Aris Exists Section */
 .why-exists {
