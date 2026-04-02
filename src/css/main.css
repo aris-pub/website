@@ -619,6 +619,25 @@ main {
     align-self: flex-start;
 }
 
+/* Showcase Section */
+.showcase {
+    padding: var(--space-lg) 0;
+    background: var(--bg-subtle);
+}
+
+.showcase-content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.showcase-content p {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
 /* Philosophy Section */
 .philosophy {
     padding: var(--space-lg) 0;
