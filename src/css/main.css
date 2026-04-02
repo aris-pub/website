@@ -614,7 +614,6 @@ main {
 }
 
 .product-cta {
-    margin-top: var(--space-md);
     display: inline-block;
     align-self: flex-start;
 }
