@@ -1,6 +1,6 @@
 # Aris Website
 
-Landing page and blog for Aris - Infrastructure for the post-PDF era. Supported by community donations and academic grants.
+Landing page and blog for Aris - Infrastructure for the post-PDF era. Supported by academic grants.
 
 Built with [Eleventy](https://www.11ty.dev/) and designed for easy deployment to [Netlify](https://netlify.com/).
 

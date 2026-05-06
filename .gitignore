@@ -4,6 +4,22 @@ _site/
 *.log
 .env
 .cache
-
 # Claude skills symlink
 .claude/skills
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+build/
+dist/
+coverage/
+.beads/dolt-server.*
+.beads/embeddeddolt/
+.beads/.beads-credential-key

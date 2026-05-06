@@ -115,7 +115,7 @@ sophistication of their thinking and honor the humanity of their journey.
 
 ## How We're Building This
 
-Aris is supported by community donations and academic grants—not venture capital equity. This funding model lets us prioritize
+Aris is supported by academic grants—not venture capital equity. This funding model lets us prioritize
 research community needs over investor returns.
 
 **Our governance varies by product:**

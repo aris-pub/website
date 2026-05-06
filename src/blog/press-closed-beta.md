@@ -102,4 +102,4 @@ The public launch announcement will come when we're ready.
 </div>
 
 *Scroll Press is part of Aris, an organization building modern research tools supported
-by community donations and academic grants. Learn more at [aris.pub](https://aris.pub).*
+by academic grants. Learn more at [aris.pub](https://aris.pub).*

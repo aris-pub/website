@@ -20,7 +20,7 @@ We have the technology to make scientific communication web-native, collaborativ
 
 **That's what Aris is for.**
 
-Tools for authoring documents that work beautifully on any device. Platforms for hosting research that stays interactive and discoverable. All supported by community donations and academic grants, not optimized for investor exits. Our future vision includes peer review systems that preserve context and credit reviewers properly, and scientific communication tools that curate the complete story of how ideas develop across formats and platforms.
+Tools for authoring documents that work beautifully on any device. Platforms for hosting research that stays interactive and discoverable. All supported by academic grants, not optimized for investor exits. Our future vision includes peer review systems that preserve context and credit reviewers properly, and scientific communication tools that curate the complete story of how ideas develop across formats and platforms.
 
 I'm not building this as a quick fix or a side project. A decade in academia taught me that meaningful change in science happens on long timescales. I'll stick it out for the next ten years building tools that will serve the next generation of researchers.
 
