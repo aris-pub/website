@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Aris</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="author" content="Aris Program">
+    <meta name="theme-color" content="#AD71F2">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://aris.pub{{ page.url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:site_name" content="Aris">
+
+    <link rel="canonical" href="https://aris.pub{{ page.url }}">
+
+    <!-- Fonts loaded externally per ARCH §1.4: not required for readability, with standard fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/arch.css">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/brand/logos/aris/aris-logo-64.svg" type="image/svg+xml">
+</head>
+<body>
+    <main>
+        <article>
+            {{ content | safe }}
+        </article>
+        <footer class="arch-footer">
+            <p><a href="https://aris.pub">aris.pub</a> · <a href="https://github.com/aris-pub/arch">source</a> · <a href="https://aris.pub/blog/a-manuscript-is-a-document-not-an-application/">announcement</a></p>
+        </footer>
+    </main>
+</body>
+</html>

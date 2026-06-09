@@ -10,6 +10,16 @@
   to = "/admin/index.html"
   status = 200
 
+[[redirects]]
+  from = "/arch"
+  to = "/arch/1.0/"
+  status = 302
+
+[[redirects]]
+  from = "/arch/"
+  to = "/arch/1.0/"
+  status = 302
+
 [[headers]]
   for = "/*"
   [headers.values]
