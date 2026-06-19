@@ -131,7 +131,11 @@ support sunset in December 2026. KFG itself is contracting because of funding sh
 [Journal of Open Source Software (JOSS)](https://joss.theoj.org) continues to operate.
 [microPublication Biology](https://www.micropublication.org) at Caltech publishes
 single-figure-unit artifacts. [Nanopublications](http://nanopub.org) ran a tutorial at
-the Extended Semantic Web Conference in 2025 (Tobias Kuhn).
+the Extended Semantic Web Conference in 2025 (Tobias Kuhn). [Semble](https://semble.so),
+built on AT Protocol by [Cosmik](https://www.cosmik.network), is the decentralized-protocol
+entry in this space: readers save links as cards into collections, with planned
+collaborative collections and a browser extension. It sits on the curation side rather
+than the annotation side, but in the same gap PubPub leaves behind.
 
 Discovery has many active tools, each taking a different bet on what the reader needs to
 evaluate after a search returns. [Elicit](https://elicit.com),
@@ -149,7 +153,11 @@ the AAAI Bridge AI4SC venue.
 A smaller cluster works on rethinking the paper's format and structure.
 [Octopus](https://www.octopus.ac) has been active under Alex Freeman, now Principal of
 Hertford College at Oxford and co-author of the July 2025 "Innovating Scholarly
-Communication" report. [Kotahi Foundation](https://kotahi.community) spun out of
+Communication" report. [Discourse Graphs](https://discoursegraphs.com) is a practice for
+representing scholarly claims and evidence as composable nodes, with tooling that runs
+inside personal-knowledge-management platforms (Roam Research, Obsidian). It approaches
+the structure question from the reader and note-taking side, where Octopus approaches it
+from the formal-publishing side. [Kotahi Foundation](https://kotahi.community) spun out of
 [Coko](https://coko.foundation) in January 2025 (Adam Hyde CEO) on the
 production-workflow side. Coko retains Ketida as a book platform with a Mellon renewal.
 
