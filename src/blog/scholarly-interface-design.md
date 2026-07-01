@@ -304,6 +304,41 @@ answer through convergence is open.
 These three approaches do not exhaust the field. They cover three different layers
 (modern-journal, federated-platform, open-durable-format) at which the work is happening.
 
+## The institutional half, and what it isn't doing
+
+Alongside the design and substrate work, a parallel effort is under way to reform the
+institutional conditions around scholarly research: incentives, policies, standards
+coordination, funder mandates, society partnerships. On June 29, 2026, ICOR
+([Incentivizing Collaborative Open Research](https://incentivizingopen.org)) convened
+Public Meeting #11, spun out from the National Academies' Roundtable on Aligning
+Incentives for Open Science. Kristen Ratan (Coko, Stratos) facilitated; the room
+brought together the editorial leadership of arXiv, bioRxiv, PLOS, F1000, Crossref, and
+the Continuous Science Foundation, alongside library, funder, and metascience voices.
+The Action Collaborative laid out five workstreams: research assembly, record of
+versions, verification and trust signals, review, and curation and synthesis. The
+Open Exchange Architecture ([OXA](https://oxa.dev)), Rowan Cockett's Curvenote-adjacent
+open interchange AST, was announced as running behind openRxiv's translation of all
+560,000+ bioRxiv and medRxiv preprints. NISO approved a Working Group on Trust Markers.
+PLOS declared "Beyond the APC" as a strategic pillar.
+
+The ICOR conversation is doing work scholarly interface design does not. It is the
+institutional half of the same field: coalition-building, incentive reform, standards
+governance, ecosystem coordination. Naming that half separately makes the design half
+easier to see. Scholarly interface design is not competing with the ICOR agenda; it is
+the design-side complement that the institutional reformers, focused on policy and
+governance, are not staffed to do.
+
+Two threads the institutional half is not engaging with are exactly the threads
+that make the design half urgent. The convening spoke almost not at all about AI as
+a reader. Yet AI systems are increasingly the first, and sometimes the only, reader a
+scholarly artifact meets: retrieval-augmented systems consume preprints, agents
+summarize methods for downstream users, tools compose citations from artifacts they
+never render. The design surface has to serve that reader alongside the human one.
+The convening also spoke almost not at all about mathematics, which sits at an unusual
+angle to the reforms: the field has arXiv's substrate advantage but has not yet been
+part of the interface-and-format conversation that biology and adjacent sciences are
+running. Both threads mark territory the design half needs to make its own.
+
 ## What's still missing, and what's next
 
 The field has practitioners, conferences, and methods, but not yet a unified discipline.
