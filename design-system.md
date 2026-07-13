@@ -71,11 +71,11 @@ This design system serves as the foundation for all Aris properties:
 
 ### Product Colors
 ```css
-/* Preview Press - Coral */
+/* Scroll Press - Coral */
 #FF6B6B
 
 /* RSM Studio - Blue */
-#4A90E2
+#38B4F8
 ```
 
 ### Status Badge Colors
@@ -261,7 +261,7 @@ border: 1px solid #4a4a4a;
 
 #### Product-Specific Buttons
 - **Press buttons**: Hover to coral (#FF6B6B)
-- **Studio buttons**: Hover to blue (#4A90E2)
+- **Studio buttons**: Hover to blue (#38B4F8)
 - **Hero buttons**: Outlined style with product colors
 
 ### Cards
@@ -457,14 +457,14 @@ Each Aris product inherits this foundation and can:
 - Four foundational principles
 
 #### Customizable Elements
-- **Primary brand color**: Products use their assigned colors (#FF6B6B for Press, #4A90E2 for Studio)
+- **Primary brand color**: Products use their assigned colors (#FF6B6B for Press, #38B4F8 for Studio)
 - **Button treatments**: Product-specific hover states and color schemes
 - **Component variations**: Adapted card layouts, navigation patterns
 - **Content-specific UI**: Publishing workflows, writing interfaces, etc.
 
 #### Product-Specific Extensions
 - **Scroll Press**: Coral accent (#FF6B6B), publication-focused components, reader interface patterns
-- **RSM Studio**: Blue accent (#4A90E2), editor-focused components, collaboration interface patterns
+- **RSM Studio**: Blue accent (#38B4F8), editor-focused components, collaboration interface patterns
 - **Future products**: Will receive assigned brand colors and develop specialized component libraries
 
 ### Maintaining Consistency
