@@ -1,8 +1,8 @@
 ---
 title: "Scholarly Interface Design"
-date: 2026-08-01
+date: 2026-07-13
 author: "Leo Torres"
-description: "Scholarly publishing has spent thirty years arguing about access. It has barely begun arguing about what readers do with the artifact once they have it. That second argument is the missing discipline. An essay naming it."
+description: "Scholarly publishing has spent thirty years arguing about access. It has barely begun arguing about what readers do with the artifact once they have it. That second argument is a discipline coming into focus. An essay on why it is worth your attention."
 tags: ["essay", "scholarly-interface-design", "post-pdf"]
 ---
 
@@ -12,18 +12,18 @@ tags: ["essay", "scholarly-interface-design", "post-pdf"]
 Designing how scientific research is packaged, distributed, read, annotated, and
 transformed, whether it is on desktops or on phones, by humans or AI agents, standalone
 or alongside data and code, has become a field of work with rapid and active innovation.
-It still has no name.
+It is a budding discipline, and here is why it is worth your attention.
 </p>
 
-*August 1, 2026 • Leo Torres*
+*July 13, 2026 • Leo Torres*
 
 ## Why the field exists
 
 Scholarly publishing has spent thirty years arguing about the distribution of research
 artifacts (open access, paywalls, mandates, transformative agreements). It has barely
 begun arguing about what the reader does with that artifact (paper, figures, data, code)
-once they have it. That second argument is the missing discipline. It exists in
-practice, scattered across initiatives and venues, without a name common to this work.
+once they have it. That second argument is a discipline coming into focus. It exists in
+practice, scattered across initiatives and venues, and it is beginning to name and organize itself.
 At Aris we have been calling it **scholarly interface design**.
 
 Three shifts make the second argument urgent. Reading not only happens at a desk with a
@@ -60,7 +60,7 @@ Lab](https://idl.cs.washington.edu) (UW IDL) writes about "augmented scholarly
 communication," foregrounding augmentation. [Distill](https://distill.pub) and its heirs
 ([transformer-circuits.pub](https://transformer-circuits.pub), [Bartosz
 Ciechanowski](https://ciechanow.ski)) speak of "interactive scientific publishing,"
-foregrounding the artifact's digital medium. "Scholarly interface design" foregrounds
+foregrounding the artifact's digital medium. Mike Morrison, creator of the viral #betterposter movement, runs [ScienceUX](https://scienceux.org/), a journal and community that names the field "Science UX" and foregrounds usability and design craft. "Scholarly interface design" foregrounds
 the surface itself as a design object. These names overlap in scope but emphasize
 different things. Aris uses "scholarly interface design" because that framing fits how
 Aris approaches the work: by focusing on the interface as the goal unto itself.
@@ -341,8 +341,8 @@ running. Both threads mark territory the design half needs to make its own.
 
 ## What's still missing, and what's next
 
-The field has practitioners, conferences, and methods, but not yet a unified discipline.
-The missing work is unglamorous: a shared vocabulary, a common name for the work, and
+The field has practitioners, conferences, methods, and now the beginnings of its own communities and names (Morrison's ScienceUX among them), but not yet a unified discipline that spans the clusters.
+The work still ahead is unglamorous: a shared vocabulary, a common frame the separate camps recognize, and
 gathering places (whether academic conferences, community workshops, or open-source
 convenings) where practitioners from across these clusters can meet and engage with each
 other's work.
@@ -357,16 +357,17 @@ practitioners a common language.
 
 Venues come second. AAAI Bridge AI4SC is the inaugural academic-side venue, ATScience
 2026 is the inaugural decentralized-protocol venue ([atproto.science](https://atproto.science)), and the CSF Banff gathering is the
-inaugural authoring-tools coalition venue. The Knowledge Futures Group transition leaves
+inaugural authoring-tools coalition venue, and [ScienceUX](https://scienceux.org/) is a standing journal and community for the design-craft side. The Knowledge Futures Group transition leaves
 a vacuum in the open-source publishing-platform niche. The field needs venues that publish
 across these silos. A venue that runs work from three or four of these clusters in the
 same proceedings would make the cross-cluster overlap visible. No such venue exists yet.
 
 These needs are coalition work, not individual work. Naming the field is one start.
 
-Scholarly interface design is one candidate name for what is happening across these
-initiatives. The work is real. What is missing is the agreement, and a shared name is
-the wedge.
+Scholarly interface design is Aris's name for what is happening across these
+initiatives, and others, like ScienceUX, name it differently. The work is real and the
+discipline is forming now. What is still missing is agreement across the clusters, worth
+building toward whatever it ends up being called.
 
 Aris's bet is that the format itself carries durability.
 [ARCH 1.0](https://aris.pub/arch/1.0/) is the spec, [Press](https://press.aris.pub) is
