@@ -1021,7 +1021,7 @@ main {
 }
 
 .post-content p {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 .post-content ul,
