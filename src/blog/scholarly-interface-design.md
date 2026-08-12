@@ -153,7 +153,7 @@ Communication" report. [Discourse Graphs](https://discoursegraphs.com) is a prac
 representing scholarly claims and evidence as composable nodes, with tooling that runs
 inside personal-knowledge-management platforms (Roam Research, Obsidian). It approaches
 the structure question from the reader and note-taking side, where Octopus approaches it
-from the formal-publishing side. Curvenote's newly released [OXA](https://oxa.dev) (Open Exchange Architecture) format publishes science as modular, connected components (narrative, data, and code) rather than one flat document. [Kotahi Foundation](https://kotahi.community) spun out of
+from the formal-publishing side. The [Continuous Science Foundation](https://continuousfoundation.org)'s newly released [OXA](https://oxa.dev) (Open Exchange Architecture), implemented by partners including Curvenote and openRxiv, publishes science as modular, connected components (narrative, data, and code) rather than one flat document. [Kotahi Foundation](https://kotahi.community) spun out of
 [Coko](https://coko.foundation) in January 2025 (Adam Hyde CEO) on the
 production-workflow side. Coko retains Ketida as a book platform with a Mellon renewal.
 
@@ -280,7 +280,7 @@ arXiv, bioRxiv, PLOS, F1000, Crossref, and the Continuous Science Foundation, al
 library, funder, and metascience voices. The Action Collaborative laid out five
 workstreams: research assembly, record of versions, verification and trust signals,
 review, and curation and synthesis. The Open Exchange Architecture
-([OXA](https://oxa.dev)), Rowan Cockett's Curvenote-adjacent open interchange AST, was
+([OXA](https://oxa.dev)), a [Continuous Science Foundation](https://continuousfoundation.org) open interchange AST convened by Rowan Cockett, was
 announced as running behind openRxiv's translation of all 560,000+ bioRxiv and medRxiv
 preprints. NISO approved a Working Group on Trust Markers. PLOS declared "Beyond the
 APC" as a strategic pillar.
