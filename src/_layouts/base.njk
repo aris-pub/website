@@ -26,6 +26,7 @@
     <meta property="twitter:image" content="{{ metadata.url }}/images/og-image.png">
     
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(metadata.url) }}">
+    {% set docKey = standardsite.documents[page.fileSlug] %}{% if docKey %}<link rel="site.standard.document" href="at://{{ standardsite.did }}/site.standard.document/{{ docKey }}">{% endif %}
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
