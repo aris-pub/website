@@ -1,0 +1,32 @@
+name: Publish blog to AT Protocol
+
+# On a push that touches the blog or the publisher, write each post's
+# site.standard.document (and the publication record) to the Aris account.
+# Idempotent: deterministic TID keys mean a run overwrites rather than duplicates,
+# so a new post is added and existing ones are left as they are.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/blog/**'
+      - 'scripts/standardsite.js'
+      - 'scripts/publish-standardsite.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Publish standard.site records
+        env:
+          ARIS_BOT_HANDLE: ${{ secrets.ARIS_BOT_HANDLE }}
+          ARIS_BOT_PASSWORD: ${{ secrets.ARIS_BOT_PASSWORD }}
+        run: node scripts/publish-standardsite.js
