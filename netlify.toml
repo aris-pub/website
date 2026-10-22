@@ -20,6 +20,16 @@
   to = "/arch/1.0/"
   status = 302
 
+# rsmify: read an arXiv paper rendered through RSM. Edit arxiv.org/abs/<id> to
+# aris.pub/r/<id>. A 302 redirect, not a proxy, because a cold conversion can
+# exceed Netlify's proxy timeout; the service runs on syenite behind the
+# Tailscale funnel.
+[[redirects]]
+  from = "/r/*"
+  to = "https://syenite.tail380acb.ts.net/r/:splat"
+  status = 302
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
