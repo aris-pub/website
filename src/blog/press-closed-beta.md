@@ -95,7 +95,7 @@ community](https://aris-pub.zulipchat.com/), or check back here for updates. I'l
 what I learn from the beta, what works and what doesn't, and how we're adapting based on
 what people actually need.
 
-*Edit, November 2026: the Aris Zulip is closed. Discussion about Aris now happens in the [SciUX Discord](https://discord.gg/VaaEvXammt).*
+*Edit, November 2026: the Aris Zulip is closed. To get in touch, see the [contact page](/contact/).*
 
 The public launch announcement will come when we're ready.
 
