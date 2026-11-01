@@ -187,6 +187,8 @@ collaborative writing. Join our [<span style="font-weight: bold;">Zulip
 Community</span>](https://aris-pub.zulipchat.com/) to discuss the future of academic
 publishing. Share your thoughts on what academic publishing should become.
 
+*Edit, November 2026: the Aris Zulip is closed. Discussion about Aris now happens in the [SciUX Discord](https://discord.gg/VaaEvXammt).*
+
 <div style="text-align: center; margin: 4rem 0;">
   <img src="/brand/logos/aris/aris-logo-64.svg" alt="Aris" style="width: 64px; height: 64px; opacity: 0.4;" />
 </div>
