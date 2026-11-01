@@ -865,6 +865,8 @@ main {
     border: 1px solid var(--border-light);
     text-align: center;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .pathway:hover {
@@ -884,19 +886,23 @@ main {
     color: var(--text-secondary);
     margin-bottom: var(--space-md);
     line-height: 1.6;
+    /* Pushes the buttons to the bottom so both cards' buttons line up. */
+    flex-grow: 1;
 }
 
 .community-links {
     display: flex;
+    flex-direction: column;
     gap: var(--space-sm);
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 22rem;
+    margin: 0 auto;
 }
 
 .community-links .pathway-cta {
-    flex: 1;
-    min-width: max-content;
     white-space: nowrap;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
 }
 
 .pathway-cta {
@@ -1436,10 +1442,6 @@ footer {
         padding: var(--space-md);
     }
     
-    .community-links {
-        flex-direction: column;
-        align-items: center;
-    }
 
     /* Blog optimizations */
     .blog-container {
